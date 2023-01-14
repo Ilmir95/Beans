@@ -8,8 +8,8 @@ public class Test5 {
                 new ClassPathXmlApplicationContext("applicationContext3.xml");
         Person person = context.getBean("personBean", Person.class);
         person.callYourPet();
-//        Dog myDog = context.getBean("myPet", Dog.class);
-//        myDog.say();
+        Dog myDog = context.getBean("myPet", Dog.class);
+        myDog.say();
         context.close();
     }
 }
